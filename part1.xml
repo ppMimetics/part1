@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="16" inline="false" x="36" y="93">
-    <field name="MODE">UNTIL</field>
+    <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="logic_compare" id="110" inline="true">
         <field name="OP">GT</field>
@@ -29,5 +29,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="171"></block>
+    </next>
   </block>
 </xml>
