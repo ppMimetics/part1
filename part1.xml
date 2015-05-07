@@ -1,7 +1,1 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="419" inline="true" x="14" y="69">
-    <statement name="DO">
-      <block type="movement_stutter" id="371"></block>
-    </statement>
-  </block>
-</xml>
+<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
