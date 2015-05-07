@@ -144,6 +144,9 @@
                                         <field name="VAR">distance</field>
                                       </block>
                                     </value>
+                                    <next>
+                                      <block type="movement_stop" id="326"></block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
