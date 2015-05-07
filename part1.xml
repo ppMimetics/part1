@@ -53,6 +53,24 @@
                             </value>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_cleardisplay" id="232">
+                            <next>
+                              <block type="oled_drawtext" id="241">
+                                <field name="TEXT">distance =</field>
+                                <next>
+                                  <block type="oled_drawnumber" id="250" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="variables_get" id="254">
+                                        <field name="VAR">distance</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
