@@ -103,49 +103,39 @@
             <statement name="DO">
               <block type="movement_reverse" id="325">
                 <next>
-                  <block type="variables_set" id="305" inline="true">
-                    <field name="VAR">distance</field>
-                    <value name="VALUE">
-                      <block type="math_arithmetic" id="306" inline="true">
-                        <field name="OP">ADD</field>
-                        <value name="A">
-                          <block type="variables_get" id="307">
-                            <field name="VAR">distance</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="308">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
+                  <block type="robot_delay" id="327" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="328">
+                        <field name="NUM">200</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_cleardisplay" id="309">
+                      <block type="movement_stop" id="326">
                         <next>
-                          <block type="oled_setcursor" id="310" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="311">
-                                <field name="NUM">10</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="312">
-                                <field name="NUM">10</field>
-                              </block>
-                            </value>
+                          <block type="oled_cleardisplay" id="309">
                             <next>
-                              <block type="oled_drawtext" id="313">
-                                <field name="TEXT">distance =</field>
+                              <block type="oled_setcursor" id="310" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="311">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="312">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="oled_drawnumber" id="314" inline="true">
-                                    <value name="NUMBER">
-                                      <block type="variables_get" id="315">
-                                        <field name="VAR">distance</field>
-                                      </block>
-                                    </value>
+                                  <block type="oled_drawtext" id="313">
+                                    <field name="TEXT">distance =</field>
                                     <next>
-                                      <block type="movement_stop" id="326"></block>
+                                      <block type="oled_drawnumber" id="314" inline="true">
+                                        <value name="NUMBER">
+                                          <block type="variables_get" id="315">
+                                            <field name="VAR">distance</field>
+                                          </block>
+                                        </value>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
