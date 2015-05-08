@@ -49,8 +49,4 @@
       </block>
     </next>
   </block>
-  <block type="controls_whileUntil" id="75" inline="false" x="-259" y="72">
-    <field name="MODE">WHILE</field>
-  </block>
-  <block type="controls_repeat" id="82" inline="true" x="-209" y="161"></block>
 </xml>
