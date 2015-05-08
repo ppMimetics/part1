@@ -8,7 +8,11 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="4"></block>
+          <block type="movement_reverse" id="24">
+            <next>
+              <block type="movement_stop" id="4"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
